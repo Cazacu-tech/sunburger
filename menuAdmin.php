@@ -252,7 +252,7 @@ if (!empty ($_POST["supprim"])) {
         $cont = 0;
         foreach ($affMenus as $menu) {
             echo " <li>";
-                echo "<a href='' class='card'>";
+                echo "<a class='card'>";
                     echo '<img src="doc/' . $menu['photo'] . '" class="card__image" alt="" />';
                     echo "<div class='card__overlay'>";
                         echo "<div class='card__header'>";
@@ -264,7 +264,7 @@ if (!empty ($_POST["supprim"])) {
                         echo "</div>";
                         echo '<div class="card__description">';
                                 echo '<div class="bSuppModiff">';
-                                    echo '<button value="Modifier" class="modifier" id="modifier-'.$cont.'" name="" action="affMenu('.$cont.')">malaku</button>';
+                                    echo '<button value="Modifier" class="modifier" id="modifier-'.$cont.'" name="" onclick="affMenu('.$cont.')">malaku</button>';
                                     echo '<button value="Supprimer" class="supprimer" name=""></button>';
                                 echo '</div>';
                         echo '</div>';
@@ -272,24 +272,24 @@ if (!empty ($_POST["supprim"])) {
                     echo "</a>";
                     echo "</li>";
                     $cont++;
-        }
-            echo "</ul>";
-            echo '<div class="fullscreenmenu" id="fullscreenmenu">';
-                // echo "malaku";
-                echo '<ul>
-                        <li>
-                            <a href="#">About</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>';
-            echo "</div>";
+                }
+                echo "</ul>";
+                echo '<div class="fullscreenmenu" id="fullscreenmenu-'.$cont.'">';
+                    // echo "malaku";
+                    echo '<ul>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+    
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+    
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>';
+                echo "</div>";
         ?>
         <!-- <ul class="cards">
         <li>

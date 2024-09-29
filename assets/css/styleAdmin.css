@@ -528,6 +528,7 @@ main form:nth-child(2) {
     transition: background 0.5s ease-in-out, opacity 0.5s;
     text-align: center;
     z-index: -1;
+    display: none;
 }
 
 /* .fullscreenmenu ul li a {

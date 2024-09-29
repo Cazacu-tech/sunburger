@@ -117,6 +117,6 @@ $(window).on("resize", () => {
 // 	document.body.classList.remove('hamburger-affiche');
 // });
 function affMenu(cont) {
+  $("#fullscreenmenu-".cont).css("display","none");
   console.log(cont);
-  
 }
